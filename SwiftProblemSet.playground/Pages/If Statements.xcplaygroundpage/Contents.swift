@@ -83,7 +83,7 @@ func checkForRelease(bugs: Int, music: Bool, levels: Int) {
             print ("- You have to fix additional \((bugs+1) - 10) bug(s)!")
         }
         
-        if hasMusic == false {
+        if !hasMusic {
             print ("- You have to add some music to the game!")
         }
         
@@ -112,8 +112,8 @@ checkForRelease(bugs: bugs, music: hasMusic, levels: numberOfLevels)
  - Write your if statement in the function, func `checkTrainingStatus(name: canFinishBike: canFinishRun:)`.
  */
 let name: String = "Teresa"
-var canFinishBike: Bool = true
-var canFinishRun: Bool = true
+var canFinishBike: Bool = false
+var canFinishRun: Bool = false
 
 func checkTrainingStatus(name: String, bike: Bool, run: Bool) {
     
@@ -123,11 +123,11 @@ func checkTrainingStatus(name: String, bike: Bool, run: Bool) {
         
         print ("\(name) isn't physically prepared yet for the planned duathlon :(")
 
-        if bike == false {
+        if !bike {
             print ("- bike component not finalized: the trainee has to do some extra exercises on riding his bike")
         }
         
-        if run == false {
+        if !run {
             print ("- run component not finalized: the trainee has to do some extra exercises in running around the block")
         }
     }
