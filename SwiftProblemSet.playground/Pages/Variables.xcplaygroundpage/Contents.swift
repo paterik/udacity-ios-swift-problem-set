@@ -17,7 +17,8 @@
 //: ### Exercise 2
 //: Make the minimal changes necessary to fix the following compiler errors related to assignment, variables, and constants.
 var favoriteLanguage: String = "Swift"
-var myFirstProgrammingLanguage: String = "C"
+let myFirstProgrammingLanguage: String = "C"
+let birthplace: String = "Hoyerswerda, Germany"
 var gallonsRemainingInTank: Double = 2.0
 var ageOfSpecimenInWeeks: Int = 32 // 32.45
 let bestProgrammingLanguage: String = myFirstProgrammingLanguage
