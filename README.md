@@ -1,10 +1,20 @@
-<img src="https://s3-us-west-1.amazonaws.com/udacity-content/degrees/catalog-images/nd003.png" alt="iOS Developer Nanodegree logo" height="70" >
-
 # Swift Problem Set
 
+## udacity.com student submission
+
+[![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](LICENSE)
+[![System Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](VERSION)
+[![Language](https://img.shields.io/badge/swift-3.0-orange.svg)](http://swift.org)
 ![Platform iOS](https://img.shields.io/badge/nanodegree-iOS-blue.svg)
 
-This repository contains starter code for the Swift Problem Set project in Udacity's iOS Nanodegree.
+*The answers for the "Swift Problem Set" project are contained in this repository.*
+
+## Keywords
+swift, udacity, extension, uikit, foundation, app
+
+## Student
+
+Patrick Paechnatz
 
 ## Maintainers
 
