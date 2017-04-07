@@ -11,7 +11,16 @@ import Foundation
 2. Declare a bool called `sick` with an initial value of true or false.
 3. Write a statement such that when `sick` is true the function `rest()` is called.
 */
+let sick: Bool = true
 
+func rest() -> Void {
+
+    print ("Stay in bed.")
+}
+
+if sick == true {
+    rest()
+}
 /*: 
 ### Exercise 11
 
@@ -19,7 +28,16 @@ import Foundation
 2. Declare two bools called `finishedWork` and `gotTickets` with initial values of true or false.
 3. Write a statement such that when both `finishedWork` and `gotTickets` are true the function `goToConcert()` is called.
  */
+let finishedWork: Bool = true
+let gotTickets: Bool = true
 
+func goToConcert() {
+    print ("That vocalist is incredible!")
+}
+
+if finishedWork == true && gotTickets == true {
+    goToConcert()
+}
 /*:
 ### Exercise 12
 
@@ -43,9 +61,9 @@ Change the values of the variables and see how the output changes.
 */
 var game = "Slow adventures with Morris the Lorris"
 
-var bugs = 9
-var hasMusic = true
-var numberOfLevels = 7
+var bugs = 12
+var hasMusic = false
+var numberOfLevels = 5
 
 func release() {
     print("\(game) is now ready for sale.")
@@ -53,6 +71,26 @@ func release() {
 
 func checkForRelease(bugs: Int, music: Bool, levels: Int) {
     
+    if bugs < 10 && hasMusic == true && levels > 5 {
+        
+        release()
+        
+    } else {
+    
+        print ("couldn't release '\(game)' in current condition:")
+        
+        if bugs > 9 {
+            print ("- You have to fix additional \((bugs+1) - 10) bug(s)!")
+        }
+        
+        if hasMusic == false {
+            print ("- You have to add some music to the game!")
+        }
+        
+        if levels < 6 {
+            print ("- You have to add additional \(5 - levels+1) level!")
+        }
+    }
 }
 
 checkForRelease(bugs: bugs, music: hasMusic, levels: numberOfLevels)
@@ -78,7 +116,21 @@ var canFinishBike: Bool = true
 var canFinishRun: Bool = true
 
 func checkTrainingStatus(name: String, bike: Bool, run: Bool) {
-    //TODO: Add your if, else-if statement here!
+    
+    if bike == true && run == true {
+        print ("\(name) is physically prepared for the planned duathlon :)")
+    } else {
+        
+        print ("\(name) isn't physically prepared yet for the planned duathlon :(")
+
+        if bike == false {
+            print ("- bike component not finalized: the trainee has to do some extra exercises on riding his bike")
+        }
+        
+        if run == false {
+            print ("- run component not finalized: the trainee has to do some extra exercises in running around the block")
+        }
+    }
 }
 
 checkTrainingStatus(name: name, bike: canFinishBike, run: canFinishRun)
