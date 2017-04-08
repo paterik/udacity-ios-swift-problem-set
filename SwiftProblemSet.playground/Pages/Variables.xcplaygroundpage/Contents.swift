@@ -13,16 +13,17 @@
  - birthplace (`String`)
  - myFirstProgrammingLanguage (`String`)
  */
-
+var gallonsRemainingInTank: Double
+var ageOfSpecimenInWeeks: Int
+let birthplace: String
+let myFirstProgrammingLanguage = "C"
 //: ### Exercise 2
 //: Make the minimal changes necessary to fix the following compiler errors related to assignment, variables, and constants.
-var favoriteLanguage: String = "Swift"
-let myFirstProgrammingLanguage: String = "C"
-let birthplace: String = "Hoyerswerda, Germany"
-var gallonsRemainingInTank: Double = 2.0
-var ageOfSpecimenInWeeks: Int = 32 // 32.45
-let bestProgrammingLanguage: String = myFirstProgrammingLanguage
 
+var favoriteLanguage: String = "Swift"
+gallonsRemainingInTank = 2
+ageOfSpecimenInWeeks = 32
+let bestProgrammingLanguage: String = myFirstProgrammingLanguage
 //: ### Exercise 3
 //: Below is some code to reverse a string. We've declared `stringToReverse` and `arrayOfCharacters` as variables. Rewrite this code to reverse a string using only constants declared with `let`, no variables. **Note**: In the new version you may use as many constants as you'd like.
 let stringToReverse = "Mutable or Immutable? That is the question."
